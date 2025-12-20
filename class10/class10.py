@@ -36,3 +36,28 @@ L = ["Hello", "World", "Python"]
 L.pop(-2)  # 移除並傳回倒數第二個元素
 print(L)  # ["Hello", "Python"]
 # 負索引，逆向索引值位置從最後開始數
+
+
+# enumerate 可以同時取得 List 當中的編號與元素
+L = ["apple", "banana", "cherry"]
+for index, item in enumerate(L):
+    print(index, item)
+
+# in 可以用來檢查某個東西是否存在，像是 if 判斷
+# 可以用來檢查 List 裡有沒有某個東西
+
+L = ["Apple", "Banana", "Cherry"]
+if "Banana" in L:
+    print("有香蕉！")
+else:
+    print("沒有香蕉！")
+
+# in 在 for 迴圈中也可以用來逐一取得 List 裡的每一個元素
+L = ["Apple", "Banana", "Cherry"]
+for item in L:
+    print("我喜歡吃", item)
+
+# in 還可以用來檢查字串裡，檢查某個子字串是否存在
+s = "Hello, World"
+if "World" in s:
+    print("有 World 這個字串！")
