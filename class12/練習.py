@@ -25,3 +25,5 @@ while True:
     elif 選擇 == "4":
         print("感謝使用水果店價格諮詢系統")
         break
+    else:
+        print("請輸入正確的選項")
